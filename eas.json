@@ -1,0 +1,25 @@
+{
+    "build": {
+        "base": {},
+        "development": {
+            "extends": "base",
+            "developmentClient": true,
+            "distribution": "internal",
+            "releaseChannel": "default",
+            "android": {
+                "buildType": "apk"
+            },
+            "ios": {
+                "simulator": true
+            }
+        },
+        "developmentDevice": {
+            "extends": "base",
+            "distribution": "internal",
+            "developmentClient": true
+        }
+    },
+    "cli": {
+        "version": ">= 0.47.0"
+    }
+}
